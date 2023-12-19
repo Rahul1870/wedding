@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+
+
+section {
+    padding: 2rem;
+}
+
+footer {
+     background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    position: static;
+    bottom: 0;
+    width: 100%; 
+
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.social-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.icon {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.icon img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+}
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.buttons-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    color:#f39c12;
+    font-size: larger;
+}
+
+#explore-button {
+    background-color: #3498db; /* Blue color */
+    color: #fff;
+    border: #555;
+}
+
+#quotes-button {
+    background-color: #e74c3c; /* Red color */
+    color: #fff;
+    border: none;
+}
+
+.image-section {
+    order: 2;
+    justify-content: center;
+}
+
+.buttons-section {
+    order: 1;
+}
+/* .logo img {
+    width: 100px; /* Adjust the width as needed */
+ /* align-items: start;
+    height: auto; */
+/* } */ 
+
+
